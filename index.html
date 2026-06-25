@@ -4,61 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CATACLYSM: The Last Generation</title>
+
     <style>
-        body{
+        body {
             background-color: rgb(14, 14, 14);
+            margin: 0;
         }
+
         a {
             text-decoration: none;
-            color:white;
+            color: white;
             font-weight: bold;
         }
+
+        .splash-image {
+            display: block;
+            margin: 3% auto 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
         ul {
             margin-top: 5%;
             list-style: none;
             padding: 0;
             display: flex;
-            gap: 1%;
+            flex-wrap: wrap;
             justify-content: center;
-            flex-wrap: wrap; /* important */
+            gap: 0.8rem;
             color: white;
             font-weight: bold;
             font-size: 150%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
         }
-        
+
+        ul li + li::before {
+            content: "•";
+            margin: 0 10px;
+            color: white;
+        }
+
         @media (max-width: 600px) {
             ul {
                 font-size: 110%;
-                gap: 10px;
                 padding: 0 10px;
-            }
-        
-            .splash-image {
-                margin-top: 10px;
-                width: 100%;
+                gap: 0.5rem;
             }
         }
     </style>
 </head>
+
 <body>
-<img src="ctlgsplash.png" alt="Cataclysm: The Last Generation splash image" class="splash-image">
-<div>
-    <ul>
-        <li><a href="https://github.com/Cataclysm-TLG/Cataclysm-TLG">GITHUB</a></li>
-        <li>•</li>
-        <li><a href="https://store.steampowered.com/app/3560030/Cataclysm_The_Last_Generation/">STEAM</a></li>
-        <li>•</li>
-        <li><a href="https://cataclysmtlg.miraheze.org/wiki/Main_Page/">WIKI</a></li>
-        <li>•</li>
-        <li><a href="https://discord.gg/ekaR3dJzp5">DISCORD</a></li>
-        <li>•</li>
-        <li><a href="https://www.patreon.com/c/Worm_Girl/posts?vanity=Worm_Girl">PATREON</a></li>
-        <li>•</li>
-        <li><a href="https://www.youtube.com/@worm-girl">YOUTUBE</a></li>
-    </ul>
-</div>
-</ul>
+    <img src="ctlgsplash.png" alt="Cataclysm: The Last Generation splash image" class="splash-image">
+
+    <div>
+        <ul>
+            <li><a href="https://github.com/Cataclysm-TLG/Cataclysm-TLG">GITHUB</a></li>
+            <li><a href="https://store.steampowered.com/app/3560030/Cataclysm_The_Last_Generation/">STEAM</a></li>
+            <li><a href="https://cataclysmtlg.miraheze.org/wiki/Main_Page/">WIKI</a></li>
+            <li><a href="https://discord.gg/ekaR3dJzp5">DISCORD</a></li>
+            <li><a href="https://www.patreon.com/c/Worm_Girl/posts?vanity=Worm_Girl">PATREON</a></li>
+            <li><a href="https://www.youtube.com/@worm-girl">YOUTUBE</a></li>
+        </ul>
+    </div>
 </body>
 </html>
