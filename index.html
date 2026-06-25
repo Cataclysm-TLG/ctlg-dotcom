@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Landing Page</title>
-  <style>
-    body {
-      background-color: black;
-      color: lightgray;
-      font-family: sans-serif;
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .links {
-      margin-top: 20px;
-      font-size: 1em;
-    }
-
-    .links a {
-      color: lightgray;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
-    }
-
-    .placeholder {
-      margin-top: 10px;
-      font-size: 1em;
-      text-align: center;
-      color: lightgray;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATACLYSM: The Last Generation</title>
+    <style>
+        body{
+            background-color: rgb(14, 14, 14);
+        }
+        /*Removes default link styling.*/
+        a {
+            text-decoration: none;
+            color:white;
+            font-weight: bold;
+        }
+        /*Horizontal list styling for the links.*/
+        ul {
+            margin-top: 5%;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 2%;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 175%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /*This is the styling for your splash image, like the class says.*/
+        .splash-image {
+            display: block;
+            margin-top: 3%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-  <img src="sitelogo.png" alt="Cataclysm: The Last Generation" width="1200" height="346">
-  <div class="links">
-    <a href="https://github.com/Cataclysm-TLG/Cataclysm-TLG">GitHub</a> |
-    <a href="https://www.youtube.com/@worm-girl">YouTube</a> |
-    <a href="patreon.com/Worm_Girl">Patreon</a>
-  </div><br><br>
-  <div class="placeholder">
-    How's that look?
-    </div>
+<!--Just replace test-image.png with your splash image file's relative path.-->
+<img src="ctlgsplash.png" alt="Cataclysm: The Last Generation splash image" class="splash-image">
+<div>
+    <ul>
+        <li><a href="https://github.com/Cataclysm-TLG/Cataclysm-TLG">GITHUB</a></li>
+        <li>•</li>
+        <li><a href="https://store.steampowered.com/app/3560030/Cataclysm_The_Last_Generation/">STEAM</a></li>
+        <li>•</li>
+        <!--Here's where the Discord link goes in the quotes, I just don't have that link available.-->
+        <li><a href="">DISCORD</a></li>
+        <li>•</li>
+        <li><a href="https://www.patreon.com/c/Worm_Girl/posts?vanity=Worm_Girl">PATREON</a></li>
+        <li>•</li>
+        <li><a href="https://www.youtube.com/@worm-girl">YOUTUBE</a></li>
+    </ul>
+</div>
+</ul>
+</body>
+</html>
